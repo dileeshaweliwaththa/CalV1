@@ -13,50 +13,110 @@ public class Controller {
     @FXML
     private Label lb1;
 
-    public void addition(){
-        float num1= Float.parseFloat(n1.getText());
-        float num2= Float.parseFloat(n2.getText());
-        lb1.setText(String.valueOf(num1+num2));
-    }
-    
-    public void subtraction(){
-        float num1= Float.parseFloat(n1.getText());
-        float num2= Float.parseFloat(n2.getText());
-        lb1.setText(String.valueOf(num1-num2));
-    }
+        //Addition
+        public void addition () {
+            try{
+                float num1 = Float.parseFloat(n1.getText());
+                float num2 = Float.parseFloat(n2.getText());
+                lb1.setText(String.valueOf(num1 + num2));
+            }
+            catch(Exception e){
+                n1.setText(n1.getText());
+                n2.setText(n2.getText());
+            }
+        }
 
-    public void multiplication(){
-        float num1= Float.parseFloat(n1.getText());
-        float num2= Float.parseFloat(n2.getText());
-        lb1.setText(String.valueOf(num1*num2)
-        );
-    }
+        //Subtraction
+        public void subtraction () {
+            try{
+                float num1 = Float.parseFloat(n1.getText());
+                float num2 = Float.parseFloat(n2.getText());
+                lb1.setText(String.valueOf(num1 - num2));
+            }
+            catch(Exception e){
+                n1.setText(n1.getText());
+                n2.setText(n2.getText());
+            }
+        }
 
-    public void division(){
-        float num1= Float.parseFloat(n1.getText());
-        float num2= Float.parseFloat(n2.getText());
-        lb1.setText(String.valueOf(num1/num2));
-    }
+        //Multiplication
+        public void multiplication () {
+            try{
+                float num1 = Float.parseFloat(n1.getText());
+                float num2 = Float.parseFloat(n2.getText());
+                lb1.setText(String.valueOf(num1 * num2));
+            }
+            catch(Exception e){
+                n1.setText(n1.getText());
+                n2.setText(n2.getText());
+            }
+        }
 
-    //Number One TextField Only Taken Hereafter
+        //Division
+        public void division () {
+            try{
+                float num1 = Float.parseFloat(n1.getText());
+                float num2 = Float.parseFloat(n2.getText());
+                lb1.setText(String.valueOf(num1 / num2));
+            }
+            catch(Exception e){
+                n1.setText(n1.getText());
+                n2.setText(n2.getText());
+            }
+        }
 
-    public void calsin(){
-        float num1= Float.parseFloat(n1.getText());
-        lb1.setText(String.valueOf(Math.sin(num1)));
-    }
+        //Number One TextField Only Taken Hereafter
 
-    public void calcos(){
-        float num1= Float.parseFloat(n1.getText());
-        lb1.setText(String.valueOf(Math.cos(num1)));
-    }
+        //Sin
+        public void calsin () {
+            try {
+                double num1 = Float.parseFloat(n1.getText());
+                num1= Math.toRadians(num1);
+                lb1.setText(String.valueOf(Math.sin(num1)));
+            }
+            catch(Exception e){
+                n1.setText(n1.getText());
+                n2.setText("Use the Above TextField");
+            }
+        }
 
-    public void caltan(){
-        float num1= Float.parseFloat(n1.getText());
-        lb1.setText(String.valueOf(Math.tan(num1)));
-    }
+        //Cos
+        public void calcos () {
+            try {
+                double num1 = Float.parseFloat(n1.getText());
+                num1= Math.toRadians(num1);
+                lb1.setText(String.valueOf(Math.cos(num1)));
+            }
+            catch(Exception e){
+                n1.setText(n1.getText());
+                n2.setText("Use the Above TextField");
+            }
+        }
 
-    public void calex(){
-        float num1= Float.parseFloat(n1.getText());
-        lb1.setText(String.valueOf(Math.exp(num1)));
-    }
+        //Tan
+        public void caltan () {
+            try {
+                double num1 = Float.parseFloat(n1.getText());
+                num1= Math.toRadians(num1);
+                lb1.setText(String.valueOf(Math.tan(num1)));
+            }
+            catch(Exception e){
+                n1.setText(n1.getText());
+                n2.setText("Use the Above TextField");
+            }
+        }
+
+        //Exp
+        public void calex () {
+            try {
+                double num1 = Float.parseFloat(n1.getText());
+                lb1.setText(String.valueOf(Math.exp(num1)));
+            }
+
+            catch(Exception e){
+                n1.setText(n1.getText());
+                n2.setText("Use the Above TextField");
+            }
+        }
+
 }
