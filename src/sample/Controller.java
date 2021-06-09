@@ -4,7 +4,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
-public class Controller {
+public class Controller{
 
     @FXML
     private TextField n1;
@@ -23,6 +23,7 @@ public class Controller {
             catch(Exception e){
                 n1.setText(n1.getText());
                 n2.setText(n2.getText());
+                lb1.setText("");
             }
         }
 
@@ -36,6 +37,7 @@ public class Controller {
             catch(Exception e){
                 n1.setText(n1.getText());
                 n2.setText(n2.getText());
+                lb1.setText("");
             }
         }
 
@@ -49,6 +51,7 @@ public class Controller {
             catch(Exception e){
                 n1.setText(n1.getText());
                 n2.setText(n2.getText());
+                lb1.setText("");
             }
         }
 
@@ -62,6 +65,7 @@ public class Controller {
             catch(Exception e){
                 n1.setText(n1.getText());
                 n2.setText(n2.getText());
+                lb1.setText("");
             }
         }
 
@@ -77,6 +81,7 @@ public class Controller {
             catch(Exception e){
                 n1.setText(n1.getText());
                 n2.setText("Use the Above TextField");
+                lb1.setText("");
             }
         }
 
@@ -90,6 +95,7 @@ public class Controller {
             catch(Exception e){
                 n1.setText(n1.getText());
                 n2.setText("Use the Above TextField");
+                lb1.setText("");
             }
         }
 
@@ -103,6 +109,7 @@ public class Controller {
             catch(Exception e){
                 n1.setText(n1.getText());
                 n2.setText("Use the Above TextField");
+                lb1.setText("");
             }
         }
 
@@ -116,6 +123,7 @@ public class Controller {
             catch(Exception e){
                 n1.setText(n1.getText());
                 n2.setText("Use the Above TextField");
+                lb1.setText("");
             }
         }
 
